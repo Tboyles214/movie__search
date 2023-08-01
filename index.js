@@ -99,7 +99,12 @@ function displayMovieData(movieData) {
         .map(
           movie => `
             <div class="movie__card">
-              <img class="movie__image" src="${movie.Poster}" alt="${movie.Title}">
+              <div class = "movie__info">
+              <a target="_blank" href='https://www.imdb.com/title/${movie.imdbID}'>
+                <img class="movie__image" src="${movie.Poster}" alt="${movie.Title}">
+              </a>
+              <h2 class="movie__title">${movie.Title}</h2>
+              </div>
             </div>
           `
         )
@@ -126,29 +131,29 @@ function displayMovieData(movieData) {
 
 
 
-function showMoviePopup(movie) {
-  // Get the modal element and the elements inside it
-  const modal = document.getElementById('movieModal');
-  const modalTitle = modal.querySelector('.modal__title');
-  const modalYear = modal.querySelector('.modal__year');
-  const modalDirector = modal.querySelector('.modal__director');
-  const modalPlot = modal.querySelector('.modal__plot');
-  const modalActor = modal.querySelector('.modal__actor');
-  const modalRating = modal.querySelector('.modal__rating');
-  const modalImdb = modal.querySelector('.modal__imdb'); 
+// function showMoviePopup(movie) {
+//   // Get the modal element and the elements inside it
+//   const modal = document.getElementById('movieModal');
+//   const modalTitle = modal.querySelector('.modal__title');
+//   const modalYear = modal.querySelector('.modal__year');
+//   const modalDirector = modal.querySelector('.modal__director');
+//   const modalPlot = modal.querySelector('.modal__plot');
+//   const modalActor = modal.querySelector('.modal__actor');
+//   const modalRating = modal.querySelector('.modal__rating');
+//   const modalImdb = modal.querySelector('.modal__imdb'); 
 
-  // Populate the modal with the movie details
-  modalTitle.innerHTML = `<h2>${movie.Title}</h2>`;
-  modalYear.innerHTML = `<p>Year: ${movie.Year}</p>`;
-  modalDirector.innerHTML = `<p>Director: ${movie.Director}</p>`;
-  modalPlot.innerHTML = `<p>Plot: ${movie.Plot}</p>`;
-  modalActor.innerHTML = `<p>Cast: ${movie.Actors}</p>`;
-  modalRating.innerHTML = `<p>Rating: ${movie.imdbRating}/10</p>`;
-  modalImdb.innerHTML = `<a target="_blank" href='https://www.imdb.com/title/${movie.imdbID}'>Click to Learn Move</a>`; 
+//   // Populate the modal with the movie details
+//   modalTitle.innerHTML = `<h2>${movie.Title}</h2>`;
+//   modalYear.innerHTML = `<p>Year: ${movie.Year}</p>`;
+//   modalDirector.innerHTML = `<p>Director: ${movie.Director}</p>`;
+//   modalPlot.innerHTML = `<p>Plot: ${movie.Plot}</p>`;
+//   modalActor.innerHTML = `<p>Cast: ${movie.Actors}</p>`;
+//   modalRating.innerHTML = `<p>Rating: ${movie.imdbRating}/10</p>`;
+//   modalImdb.innerHTML = `<a target="_blank" href='https://www.imdb.com/title/${movie.imdbID}'>Click to Learn Move</a>`; 
 
-  // Display the modal
-  modal.style.display = 'block';
-}
+//   // Display the modal
+//   modal.style.display = 'block';
+// }
 
 
 

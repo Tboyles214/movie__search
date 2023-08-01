@@ -13,42 +13,38 @@
 </head>
 <body>
     <div class="banner__container">
-        <img class="movie__banner" src="movie-banner.png" alt="">
+        <div class="movie__banner"></div>
         <h1>Movie Search</h1>
         <div class="search__container">
             <input type="text" id="searchInput" placeholder="Search for a movie" class="search__input">
             <button id="searchButton" onclick="searchMovie()" class="search__button"><i class="fa-solid fa-magnifying-glass"></i></button>
+          </div>
+          <h2 id="trending" class="trending">Trending Movies</h2>
         </div>
-    </div>
-    
-
-
-    <div class="movie__container" id="trending__movies">
-        <h2 id="trending">Trending Movies</h2>
+        
+        
+        
+      <div class="movie__container" id="trending__movies">
         <div id="trendingMovies" class="movie__list"></div>
-    </div>
-
-
-    <div class="movie__container">
         <div id="searchResults" class="movie__list"></div>
     </div>
 
-    <div id="movieModal" class="modal">
-        <div class="modal__content">
-          <span class="modal__close" onclick="closeMovieModal()">&times;</span>
-          <h2 class="modal__title"></h2>
-          <p class="modal__year"></p>
-          <p class="modal__director"></p>
-          <p class="modal__plot"></p>
-          <p class="modal__actor"></p>
-          <p class="modal__rating"></p>
-          <a class="modal__imdb" target="_blank"></a>
-        </div>
-      </div>
+
+   
+
+    
       
       <div id="loading" class="loading__overlay">
         <div class="loading__spinner"></div>
       </div>
-
-</body>
+      
+      
+    </body>
+      <footer id="footer">
+          <div class="footer__container">
+              <div class="row__footer">
+                <h2 class="footer__text">Copyright Tyler Boyles 2023</h2>
+                </div> 
+            </div>
+        </footer>
 </html>
