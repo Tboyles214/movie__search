@@ -1,50 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
     <script src="index.js" defer></script>
     <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
-  />
-</head>
-<body>
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+  </head>
+  <body>
     <div class="banner__container">
-        <div class="movie__banner"></div>
-        <h1>Movie Search</h1>
-        <div class="search__container">
-            <input type="text" id="searchInput" placeholder="Search for a movie" class="search__input">
-            <button id="searchButton" onclick="searchMovie()" class="search__button"><i class="fa-solid fa-magnifying-glass"></i></button>
-          </div>
-          <h2 id="trending" class="trending">Trending Movies</h2>
-        </div>
-        
-        
-        
-      <div class="movie__container" id="trending__movies">
-        <div id="trendingMovies" class="movie__list"></div>
-        <div id="searchResults" class="movie__list"></div>
+      <div class="movie__banner"></div>
+      <h1>Movie Search</h1>
+      <div class="search__container">
+        <input
+          type="text"
+          id="searchInput"
+          placeholder="Search for your favorite movie..."
+          class="search__input"
+        />
+        <button
+          id="searchButton"
+          onclick="searchMovie()"
+          class="search__button"
+        >
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </button>
+      </div>
+      <h2 id="trending" class="trending">Trending Movies</h2>
     </div>
 
+    <div class="movie__container" id="trending__movies">
+      <div id="trendingMovies" class="movie__list"></div>
+      <div id="searchResults" class="movie__list"></div>
+    </div>
 
-   
-
-    
-      
-      <div id="loading" class="loading__overlay">
-        <div class="loading__spinner"></div>
+    <div id="loading" class="loading__overlay">
+      <div class="loading__spinner"></div>
+    </div>
+  </body>
+  <footer id="footer">
+    <div class="footer__container">
+      <div class="row__footer">
+        <div class="footer__text">
+          <h2>&copy; Copyright Tyler Boyles 2023</h2>
+        </div>
+        <div class="links_container">
+          <a class="links" href="#">
+            <i class="fa-solid fa-house"></i>
+          </a>
+          <a class="links" href="#">
+            <i class="fa-brands fa-linkedin"></i>
+          </a>
+          <a class="links" href="#">
+            <i class="fa-brands fa-github"></i>
+          </a>
+        </div>
       </div>
-      
-      
-    </body>
-      <footer id="footer">
-          <div class="footer__container">
-              <div class="row__footer">
-                <h2 class="footer__text">Copyright Tyler Boyles 2023</h2>
-                </div> 
-            </div>
-        </footer>
-</html>
+    </div>
+  </footer>
+  
