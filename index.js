@@ -4,7 +4,7 @@
 // add loading state
 
 const apikey = '42a9be14';
-const apiurl = '//www.omdbapi.com/?apikey=';
+const apiurl = 'https://www.omdbapi.com/?apikey=';
 const urlWithKey = apiurl + apikey;
 const searchInput = document.getElementById('searchInput');
 const searchButton = document.getElementById('searchButton');
